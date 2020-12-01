@@ -364,7 +364,7 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-.body {
+body {
     position: absolute;
     width: 1520px;
     height: 5800px;
