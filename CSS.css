@@ -364,35 +364,29 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-body {
+.body {
+    position: absolute;
+    width: 1520px;
+    height: 5800px;
     background: #AF1811;
-
-
-}
-.header {
-    position: relative;
-    width: 1519px;
-    height: 5120px;
-    overflow-x: scroll;
-    background: #AF1811;
-    border: 12px solid #DDB115;
+    border: 13px solid #DDB115;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    border-radius: 15px;
+    margin: auto ;
+    left: 0%;
+    right: 0%;
 
 
 }
-.box {
+.menu {
     position: absolute;
     height: 1122px;
     width: 380px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
-
-    left: 0%;
     right: 0%;
-    top: 0%;
     bottom: 0%;
 
     background: #19141A;
@@ -404,7 +398,7 @@ body {
     list-style-type: none;
     display: table-row-group;
 }
-.nav>li {
+.nav>form {
     margin-top: 70px;
     margin-left: 52px;
 }
@@ -414,7 +408,6 @@ body {
     padding: 10px 15px;
     position: relative;
     color: white;
-    font-family: Roboto;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -422,16 +415,24 @@ body {
     letter-spacing: 0em;
     text-align: right;
 }
-.img_contest{
+.nav_btn:hover {
+    background: green;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+.img-opening {
     position: absolute;
-    width: 1049px;
-    height: 1035px;
-    left: 379px;
+    width: 1152px;
+    height: 1122px;
+    left: 370px;
     top: 0px;
 }
-.box2 {
+.box-contest {
     position: absolute;
-    width: 1500px;
+    width: 1495px;
     height: 1035px;
     left: 0px;
     top: 1122px;
@@ -440,7 +441,7 @@ body {
 
     background: linear-gradient(61.28deg, rgba(255, 200, 6, 0.75) 67.95%, rgba(206, 165, 20, 0) 84.54%);
 }
-.img_1 {
+.img-contest {
     position: absolute;
     height: 1035px;
     width: 1050px;
@@ -449,7 +450,7 @@ body {
 
     background-image: url("../img/конкурс  1.png");
 }
-.text {
+.contest {
     position: absolute;
     height: 736.8310546875px;
     width: 399.5369873046875px;
@@ -464,34 +465,36 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+
 }
-.box3 {
+.collection-cars {
     position: absolute;
-    Width: 1506px;
+    Width: 1495px;
     height: 1026px;
     left: 0px;
     right: 0px;
     top: 2155px;
     bottom: 46.92%;
 
-    background: #C18F30;
+    background: #c18f30;
 }
-.box4 {
+.collection{
     position: absolute;
     height: 44px;
-    width: 309.6845703125px;
-    left: 642px;
+    width: 300px;
+    left: 587px;
     top: 16px;
     border-radius: 0px;
     right: 0%;
     bottom: 0%;
+    font-family: Roboto;
 
     background: #CA1515;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.text1{
-    font-family: Roboto;
+.text-collection{
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -499,6 +502,7 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: white;
+    font-family: Roboto;
 
 }
 .photo1{
@@ -506,78 +510,281 @@ body {
     height: 262px;
     width: 442.25494384765625px;
     left: 118px;
-    top: 14px;
+    top: 36px;
 
-    background-image: url("../img/машина 2 1.png");
+    background-image: url("../img/машина 2 .png");
+    background-repeat: no-repeat
 }
 .photo2{
     position: absolute;
     height: 262px;
     width: 464.5267333984375px;
     right: 118px;
-    top: 14px;
+    top: 36px;
 
-    background-image: url("../img/машина 1 1.png");
+    background-image: url("../img/машина 1 .png");
+    background-repeat: no-repeat
 
 }
 .photo3{
+    position: absolute;
+    height: 265px;
+    width: 442.25494384765625px;
+    left: 118px;
+    top: 351px;
+    background-image: url("../img/машины 3 .png");
+    background-repeat: no-repeat
 
 }
 .photo4{
-
+    position: absolute;
+    height: 265px;
+    width: 464.5267333984375px;
+    right: 118px;
+    top: 351px;
+    background-image: url("../img/машина 5 .png");
+    background-repeat: no-repeat
 }
 .photo5{
+    position: absolute;
+    height: 260px;
+    width: 442.25494384765625px;
+    left: 118px;
+    top: 672px;
+    border-radius: 0px;
+
+    background-image: url("../img/машина 6 .png");
+    background-repeat: no-repeat
 
 }
 .photo6{
+    position: absolute;
+    height: 260px;
+    width: 464.5267333984375px;
+    right: 118px;
+    top: 672px;
+    border-radius: 0px;
+    background-image: url("../img/машины 4 .png");
+    background-repeat: no-repeat
 
 }
-.box5{
+.pride{
+    position: absolute;
+    width: 700px;
+    height: 112px;
+    left: 409px;
+    top: 3250px;
+    background-color: #DDB115;
+    border-radius: 50px
 
 }
-.box6{
+.text-pride{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 0%;
+    bottom: 0%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+
+    color: #AF1811;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.img-retro{
+    position: absolute;
+    width: 601px;
+    height: 524px;
+    left: 50px;
+    top: 3455px;
+
+    background: url("../img/ретро автомобиль.png");
+    filter: drop-shadow(-40px 20px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat
 
 }
-.img_2{
+.info-about-car{
+    position: absolute;
+    width: 953px;
+    height: 394px;
+    left: 100px;
+    top: 4000px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: Roboto;
+
+    color: #FFFFFF;
 
 }
-.text2{
+.car-history{
+    position: absolute;
+    height: 394px;
+    width: 953px;
+    left: 450px;
+    top: 4250px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+.application{
+    position: relative;
+    width: 1506px;
+    height: 305px;
+    left: 0%;
+    top: 4700px;
+    margin: auto;
+    background-color: #DDB115;
+
 
 }
-.text3{
+.line{
+    position: absolute;
+    height: 40px;
+    width: 310.6125183105469px;
+    left: 194.5250244140625px;
+    top: 155px;
+    background: #FFFBFB;
+    border-radius: 20px
+
 
 }
-.box7{
+.line2{
+    position: absolute;
+    height: 40px;
+    width: 311.6583251953125px;
+    left: 609.7208251953125px;
+    top: 155px;
+    background: #FFFEFE;
+    border-radius: 20px;
+
 
 }
-.box8{
+.dispatch{
+    position: absolute;
+    height: 222px;
+    width: 222px;
+    left: 1050px;
+    top: 50px;
+    border-radius: 100%;
+    margin:  auto;
+
+    background: #8D8C89;
+    border: 15px solid #1A120C;
 
 }
-.box9{
+.text-application{
+    position: absolute;
+    left: 12.92%;
+    right: 10.35%;
+    top: 0%;
+    bottom: 81.64%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: Roboto;
+
+    color: #53440E;
+
+    text-shadow: 2px 2px 2px white;
 
 }
-.box10{
+.input{
+    position: absolute;
+    height: 84px;
+    width: 153.73748779296875px;
+    left: 120px;
+    top: 2px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Roboto;
+    color: #A49393
 
 }
-.text4{
+.input1{
+    position: absolute;
+    height: 84px;
+    width: 153.73748779296875px;
+    left: 80px;
+    top: 2px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Roboto;
+    color: #A49393
+}
+.send{
+    position: absolute;
+    height: 42px;
+    width: 189.2957763671875px;
+    left: 24px;
+    top: 83px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: Roboto;
+
 
 }
-.text5{
+.img-map{
+    position: absolute;
+    width: 615px;
+    height: 548px;
+    left: 0%;
+    top: 5050px;
+
+    background-image: url("../img/карта.png");
 
 }
-.text6{
+.info{
+    position: relative;
+    width: 715px;
+    height: 335px;
+    top: 4900px;
+    left: 25%;
+    margin: auto;
+    background: #DDB115
 
 }
-.box11{
+.location{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20%;
+    bottom: 15.38%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    font-family: Roboto;
 
-}
-.img_3{
-
-}
-.box12{
-
-}
-.text7{
+    color: #C61B1B;
 
 }
 
