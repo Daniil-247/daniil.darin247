@@ -369,7 +369,7 @@ body {
     width: 1520px;
     height: 5800px;
     background: #AF1811;
-    border: 13px solid #DDB115;
+    border: 13px solid #ddb115;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -421,15 +421,14 @@ body {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
-
-
 .img-opening {
     position: absolute;
-    width: 1152px;
+    width: 1300px;
     height: 1122px;
     left: 370px;
-    top: 0px;
+    top: 25px;
 }
+
 .box-contest {
     position: absolute;
     width: 1495px;
@@ -641,7 +640,7 @@ body {
     color: #FFFFFF;
 }
 .application{
-    position: relative;
+    position: absolute;
     width: 1506px;
     height: 305px;
     left: 0%;
@@ -762,11 +761,11 @@ body {
 
 }
 .info{
-    position: relative;
+    position: absolute;
     width: 715px;
     height: 335px;
-    top: 4900px;
-    left: 25%;
+    top: 5200px;
+    left: 52%;
     margin: auto;
     background: #DDB115
 
